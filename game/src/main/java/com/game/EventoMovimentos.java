@@ -36,7 +36,7 @@ public class EventoMovimentos {
     private void startMovimento() {
         Timeline timeline = new Timeline();
         KeyFrame keyFrame = new KeyFrame(Duration.millis(200), e->{
-            Integer positionX= cobra.getPositionX();
+            Integer positionX= cobra.getPositionX(); //ERRO INFORMANDO QUE COBRA.GETPOSITIONX É NULL
             Integer positionY= cobra.getPositionY();
 /* condições de movimento */
             if (KeyCode.RIGHT.equals(direcaoAtual)){
